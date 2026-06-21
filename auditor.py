@@ -75,9 +75,9 @@ def audit_password(password):
     print(f"  Strength Label : {strength}")
     
     if pwned_count > 0:
-        print(f"  Breach Status  : ⚠️  COMPROMISED ({pwned_count:,} times)")
+        print(f"  Breach Status  :  COMPROMISED ({pwned_count:,} times)")
     else:
-        print(f"  Breach Status  : ✅ Not found in known breaches")
+        print(f"  Breach Status  : Not found in known breaches")
 
     if feedback:
         print(f"\n  Suggestions:")
@@ -89,7 +89,7 @@ def audit_password(password):
     print("="*50 + "\n")
 
 def main():
-    print("\n🔐 Password Security Auditor")
+    print("\n Password Security Auditor")
     print("Checks strength + known data breaches\n")
 
     if len(sys.argv) > 1:
